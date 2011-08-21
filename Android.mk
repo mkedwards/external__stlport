@@ -39,7 +39,7 @@ libstlport_src_files := \
 	src/cxa.c \
 
 libstlport_cflags := -D_GNU_SOURCE -DUSE_SPRINTF_INSTEAD
-libstlport_cppflags := -fuse-cxa-atexit
+libstlport_cppflags := -fuse-cxa-atexit -fno-strict-aliasing
 
 ##########################################
 include $(CLEAR_VARS)
